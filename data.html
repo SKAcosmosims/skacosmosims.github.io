@@ -38,24 +38,157 @@
 
       <div class="presentation-text">
         <p>
-            You can find here different data products. 
+            You can find here different data products. The data is temporarily stored in a server located in the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/">Center for Computational Astrophysics</a> in New York.
         </p>
-          <p>The data is temporarily stored in a server located in the Center for Computational Astrophysics in New York. The easiest way to download the data is to copy the data link by right-clicking on it and then wget copied_link. </p>
+          <p> There are different ways to download the data. If the data is in one single file the easiest way to download it is to copy the data link by right-clicking on it and then wget copied_link. If the data consists in multiples files </p>
+         
           <p>For large datasets we can arrange a more optimal way to transfer the data via globus. Please <a href="mailto:David.Alonso@physics.ox.ac.uk, villaescusa.francisco@gmail.com">contact us</a> if needed. </p>
 
           <hr>
           <p><b>Name</b>: BAO simulations for SKA1-MID</p>
-          <p><b>Authors</b>: David Alonso, Matteo Viel and Francisco Villaescusa-Navarro</p>
-          <p><b>Description</b>: </p>
+          <p><b>Authors</b>: David Alonso, Francisco Villaescusa-Navarro and Matteo Viel</p>
+          <p><b>Description</b>: All-sky simulations from z=0 to z=3 containing the cosmological 21cm signal. There are a total of 200 simulations. 100 simulations have been run with a cosmological model having a BAO peak while another 100 have been run with a smooth input power spectrum that do not have a BAO peak. </p>
           <p><b>References</b>: <a href="https://arxiv.org/abs/1609.00019">1609.00019</a></p>
-          <p><b>Data</b>: </p>
+          <p><b>Data</b>: <a href="http://voms.simonsfoundation.org:50013/L335SDMK98DVhCqAmPpN2mwv3fos8x3/OutBoundSKA/BAO_SKAMID/">Link to simulations</a>. Each simulation weights 2.1Gb. All simulations occupy 406Gb. Fits format. Write to <a href="mailto:David.Alonso@physics.ox.ac.uk">David Alonso</a> if you need a script to read it.</p>
           
          <hr>
           <p><b>Name</b>: SKA1-LOW lightcone</p>
           <p><b>Authors</b>: Francisco Villaescusa-Navarro</p>
-          <p><b>Description</b>: This is a catalogue with positions, HI masses, redshifts, peculiar velocities of galaxies in a lightcone between between z=3 and z=6 covering an area of 28 square degrees.</p>
-          <p><b>Data</b>: <a href="http://voms.simonsfoundation.org:50013/L335SDMK98DVhCqAmPpN2mwv3fos8x3/OutBoundSKA/SKA1-LOW_lightcone/pinocchio.LOW.plc.out">Here<a>. 43Gb. Format is binary and data can be read with <a href="http://voms.simonsfoundation.org:50013/L335SDMK98DVhCqAmPpN2mwv3fos8x3/OutBoundSKA/ReadPinocchio.py">this script</a>. </p>
-          <hr>
+          <p><b>Description</b>: This is a catalogue with positions, HI masses, redshifts, peculiar velocities of galaxies in a lightcone between between z=3 and z=6 covering an area of 28 square degrees. It has been generated using the Pinocchio code.</p>
+          <p><b>References</b>: <a href="http://adlibitum.oats.inaf.it/monaco/pinocchio.html">Pinocchio</a></p>
+          <p><b>Data</b>: <a href="http://voms.simonsfoundation.org:50013/L335SDMK98DVhCqAmPpN2mwv3fos8x3/OutBoundSKA/SKA1-LOW_lightcone/pinocchio.LOW.plc.out">Here<a>. Single file of 43Gb. Format is binary and data can be read with <a href="http://voms.simonsfoundation.org:50013/L335SDMK98DVhCqAmPpN2mwv3fos8x3/OutBoundSKA/ReadPinocchio.py">this script</a>. </p>
+
+              
+        <hr>
+          <p><b>Name</b>: T-RECS</p>
+          <p><b>Authors</b>: Anna Bonaldi</p>
+          <p><b>Description</b>: Continuum galaxy lightcone. Total intensity (complete) and polarisation (in progress). Redshift range: 0 < z < 8. Area: 25 deg^2. Mass resolution: 1.061e8 Msun/h (DM particles)</p>
+          <p><b>References</b>: </p>
+          <p><b>Data</b>:  </p>   
+              
+        <hr>
+          <p><b>Name</b>: JUBILEE</p>
+              <p><b>Authors</b>: <a href="mailto:jdiego@ifca.unican.es">Jose M. Diego</a></p>
+          <p><b>Description</b>: Large volume cosmological simulation (6 Gpc/h)^3.
+We have DM halo catalogs, radio catalogs at 1.4 GHz and LRG catalogs. 
+We also have all sky maps of the ISW effect drawn from the same simulation as well as lensing distortions scaled to a background at z=1100 (i.e CMB) but could be re-scaled to other redshifts.</p>
+              <p><b>References</b>: <a href="http://adsabs.harvard.edu/abs/2014MNRAS.438..412W">1307.1712</a></p>
+          <p><b>Data</b>:  </p>   
+              
+              
+        <hr>
+          <p><b>Name</b>: Manchester IM pipeline</p>
+              <p><b>Authors</b>: <a href="mailto:stuart.harper@manchester.ac.uk, clive.dickinson@manchester.ac.uk">Stuart Harper, Clive Dickinson</a></p>
+          <p><b>Description</b>: End-to-end simulation pipeline for any single-dish radio telescope (e.g. SKA-MID).
+We are currently working a paper (Harper et al.) to estimate how 1/f noise affects the recovery of the cosmological HI signal for an SKA-MID type survey. 
+Full timeline generation - pointing models, scan strategies, thermal noise, 1/f noise, atmosphere, foreground and cosmological signals.
+Systematics (in development) - 1/f noise and gain variations, miscalibration, standing waves...
+Data Analysis - Map-Making, component separation, power spectrum estimation, Likelihood parameter estimation.</p>
+              <p><b>References</b>: <a href="https://arxiv.org/abs/1711.07843">1711.07843</a></p>
+          <p><b>Data</b>:  </p>   
+        
+              
+        <hr>
+          <p><b>Name</b>: skalens Pipeline</p>
+              <p><b>Authors</b>: <a href="mailto:A.Bonaldi@skatelescope.org, ian.harrison-2@manchester.ac.uk">Anna Bonaldi, Ian Harrison</a></p>
+          <p><b>Description</b>: Catalogue-level simulations of SKA-MID continuum observations, originally done for weak lensing.
+Choose survey parameters (area, depth, observing frequency, PSF size from weighting), get a catalogue of detected sources with observed properties (size, flux, redshift, ellipticity), and the measured shear power spectra from these sources.
+Input: source population (currently SKADS+rescalings), SKA1-MID sensitivity curves (from Robert Braun), noise distributions for observed ellipticity (from Tomek Kacprzak), simple Kolmogorov model for ionospheric contribution to PSF size.</p>
+              <p><b>References</b>: <a href="https://arxiv.org/abs/1601.03948">1601.03948</a></p>
+          <p><b>Data</b>:  </p>  
+              
+              
+              
+        <hr>
+          <p><b>Name</b>: LIGER</p>
+              <p><b>Authors</b>: <a href="mailto:porciani@astro.uni-bonn.de, mikolajb@astro.uni-bonn.de, daniele.bertacca@gmail.com">Mikolaj Borzyszkowski, Daniele Bertacca, Cristiano Porciani</a></p>
+          <p><b>Description</b>: 125 full-sky mocks for z<0.6 including all linear relativistic effects. The galaxy density in redshift space corresponds to a (conservative) flux limit of 23 \mu Jy [n(z) and linear bias from Yahya et al. 2015 from which we derive both the evolution and the magnification bias]. These mocks address the very large scales and do not resolve single galaxies. Only the gridded density field is available. This set of simulations is particularly useful to compute error bars and covariance matrices.
+ 
+The LIGER method takes a Newtonian simulation as an input and, after selecting an observer, outputs the distribution of galaxies in ‘comoving redshift space’ (i.e. as it would be inferred by applying the background metric to the observed galaxy properties). The algorithm combines the original snapshots of the simulation at constant background time to produce the galaxy distribution on the perturbed light cone. This is achieved by using a coordinate transformation that includes local terms and contributions that are integrated along the line of sight. LIGER is completely general and can be applied to the output of any N-body or hydro code.</p>
+              <p><b>References</b>: <a href="http://de.arxiv.org/abs/1703.03407">1703.03407</a></p>
+          <p><b>Data</b>:  </p>  
+              
+              
+              
+        <hr>
+          <p><b>Name</b>: MERAXES</p>
+              <p><b>Authors</b>: <a href="mailto:smutch@unimelb.edu.au, wolz.laura@googlemail.com">Simon Mutch, Laura Wolz</a></p>
+          <p><b>Description</b>: 
+Meraxes is a state-of-the-art semi-analytic galaxy formation model specifically designed to self-consistently couple high-z galaxy growth and the Epoch of Reionization (EoR).  This is achieved by modelling galaxy formation using traditional semi-analytic techniques, whilst simultaneously filtering the simulation volume using the 21cmFAST (Mesinger et al. 2011) excursion set formalism. Meraxes has been shown to reproduce the observed z=7–2 galaxy stellar mass function, quasar UV luminosity function, Thompson scattering optical depth, and ionizing emissivity constraints.  Published versions of the model do not include galactic HI predictions, however, we have unpublished versions which do provide this information.
+The biggest simulation (Tiamat-125HR) is a 125/h Mpc on-a-side box with 164 snapshots between z=35 and 2 and an N-body particle mass of 1.3e8/h Msol.  We also have higher res box (Tiamat) which is 67.8/h Mpc on-a-side with the same snapshot strategy but a particle mass of 2.6e6/h Msol.</p>
+              <p><b>References</b>: </p>
+          <p><b>Data</b>:  </p>  
+              
+
+        <hr>
+          <p><b>Name</b>: CHPC MeerKAT lightcones</p>
+              <p><b>Authors</b>: <a href="mailto:catherine.cress@gmail.com">Catherine Cress</a></p>
+          <p><b>Description</b>: 
+At the CHPC, we have constructed lightcones with FOV matched to a single MeerKAT pointing. We use hydrosimulations of Romeel Dave and include HI and continuum from star formation.</p>
+              <p><b>References</b>: </p>
+          <p><b>Data</b>:  </p>  
+              
+              
+        <hr>
+          <p><b>Name</b>: JPL IM simulation toolkit</p>
+              <p><b>Authors</b>: <a href="mailto:philbull@gmail.com">Phil Bull, Daniel Lenz; Hao-Yi Wu; Alex Merson; Tzu-Ching Chang; Olivier Doré</a></p>
+          <p><b>Description</b>: Suite of several IM-friendly simulation methods, all of which are currently works in progress (but reasonably close to being fit for consumption):
+              
+              <ul>
+                  <li> <b>Fast spectral datacube generator</b>: A DM halo -> spectral datacube conversion tool, based on the CyGrid fast gridding tool. This can paint HI properties (including spectral line profiles) onto many millions of DM halos, and combine them into a single datacube. We currently have this interfaced with a Bolshoi lightcone, but it will accept any halo catalogue as long as it has a few basic properties.</li>
+              <li><b>Joint Euclid+LSST+SKA+WFIRST lightcone</b>: A wide and deep lightcone designed for Euclid/WFIRST, painted with semi-analytic galaxy properties from a very large run of the Galacticus SAM. Properties include the standard SFR/Mstar/etc., as well as multi-band photometry and even some spectra (esp. for H-alpha). We're in the process of painting continuum and HI properties onto the catalogue. The catalogue is also broken up into pixels on the sky, so you can work with individual narrow lightcones instead of the whole wide-angle dataset (which is huge).</li>
+
+                  <li><b>Fast rescalable IM simulations</b>: A code for rapidly painting multi-line IM properties onto a (Gaussian, log-normal, or COLA) 3D realisation of a density field. The code works by using the ghost multi-tracer halo model to predict the average conditional luminosity function for each emission line of interest. This is then modulated by the density field and a (halo mass-dependent) bias factor in each voxel. Then, a Poisson random draw is made to create a realisation of the total line luminosity/brightness temperature in each voxel. This method can be used to rapidly re-paint simulations with different models for the spectral line conditional luminosity functions. It can also be used to model the "confusion noise" from unresolved, low-mass halos in N-body simulations (which have finite mass limits).</li></p>
+              </ul>
+              
+        <p><b>References</b>: </p>
+          <p><b>Data</b>:  </p>  
+              
+          
+        <hr>
+          <p><b>Name</b>: Updated Millennium I and II simulations and the Phoenix simulation</p>
+          <p><b>Authors</b>: <a href="mailto:xuelei@cosmology.bao.ac.cn">Xuelei Chen, Qi Guo, Yidong Xu, Bin Yue</a></p>
+          <p><b>Description</b>: 
+We have several Semi-analytical models (SAM) available for SKA study. The Millennium I simulation
+was used by Obreschkow et al(2009) to construct the virtual sky for SKA, the simulation here is however based on a modified version,
+which employs an semi-analytical model which improved treatment of supernovae feedback, satellite gas stripping, and better model of
+galaxy angular momentum and size. The Millennium II simulation has a smaller box (100 Mpc/h instead of 500 Mpc/h) but higher mass
+resolution (6.8e6 Msun/h instead of 8.6e8 Msun/h), and also have corresponding SAM. The Phoenix simulation is a simulation of 9 individual
+rich clusters and their surroundings.  </p>
+          <p><b>References</b>: </p>
+          <p><b>Data</b>:  </p>  
+          
+          
+        <hr>
+          <p><b>Name</b>: Hydrodynamic simulations for SKA1-LOW</p>
+          <p><b>Authors</b>: <a href="mailto:villaescusa.francisco@gmail.com, matteoviel@gmail.com">Francisco Villaescusa-Navarro, Matteo Viel</a></p>
+          <p><b>Description</b>: 
+Set of snapshots from hydrodynamic simulation with different values of Omega_m, Omega_b, Omega_nu, h, n_s, s_8, m_WDM...etc, Hydro sims run using Gadget-III with cooling, heating, star formation, supernova feedback...etc. HI self-shielding and presence of H2 accounted for. 
+State-of-the-art modeling of the Lya forest.
+Redshift range: z ~ 2 - 6
+Box size: 15-100 Mpc/h
+Mass resolution: ~1e6-1e8 Msun/h  </p>
+          <p><b>References</b>: <a href="https://arxiv.org/abs/1502.06961">1502.06961</a>, <a href="https://arxiv.org/abs/1507.05102">1507.05102</a> </p>
+          <p><b>Data</b>:  </p>  
+              
+              
+              
+
+  
+          
+          
+              
+              
+          
+          
+              
+              
+                       
+              
+              
+              
+              
+        <hr>              
       </div>
 
     </div>
