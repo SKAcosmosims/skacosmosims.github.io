@@ -79,7 +79,7 @@ body{
 .header-menu li{
   display: table-cell;
   text-align: center;
-  width: 5em;
+  width: 4em;
 }
 
 .header-menu li a{
