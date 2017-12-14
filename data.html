@@ -47,14 +47,20 @@
           <hr>
           <p><b>Name</b>: BAO simulations for SKA1-MID</p>
           <p><b>Authors</b>: <a href="mailto:David.Alonso@physics.ox.ac.uk, villaescusa.francisco@gmail.com, matteoviel@gmail.com">David Alonso, Francisco Villaescusa-Navarro and Matteo Viel</a></p>
-          <p><b>Description</b>: All-sky simulations from z=0 to z=3 containing the cosmological 21cm signal. There are a total of 200 simulations. 100 simulations have been run with a cosmological model having a BAO peak while another 100 have been run with a smooth input power spectrum that do not have a BAO peak. </p>
-          <p><b>References</b>: <a href="https://arxiv.org/abs/1609.00019">1609.00019</a></p>
-          <p><b>Data</b>: <a href="http://voms.simonsfoundation.org:50013/L335SDMK98DVhCqAmPpN2mwv3fos8x3/OutBoundSKA/BAO_SKAMID/">Link to simulations</a>. Each simulation weights 2.1Gb. All simulations occupy 406Gb. Fits format. Write to <a href="mailto:David.Alonso@physics.ox.ac.uk">David Alonso</a> if you need a script to read it.</p>
+          <p><b>Description</b>: All-sky maps from z=0 to z=3. There are three different types of maps: 
+              <ul>
+                  <li>Maps containing the 21cm signal with an underlying power spectrum that contain the BAO wiggles. Labeled as run_pkEH_s1XXX.</li>
+                  <li>Maps containing the 21cm signal with an underlying power spectrum that do not contain the BAO wiggles. Labeled as run_pkEH_smooth_s1XXX.</li>
+                  <li>Maps containing the foregrounds. Labeled as run_fg_s1XXX.</li>
+          </ul>
+              For each configuration there are 100 independent realizations. </p>
+        <p><b>References</b>: <a href="https://arxiv.org/abs/1609.00019">1609.00019</a>, <a href="https://arxiv.org/abs/1405.1751">1405.1751</a></p>
+          <p><b>Data</b>: <a href="http://voms.simonsfoundation.org:50013/L335SDMK98DVhCqAmPpN2mwv3fos8x3/OutBoundSKA/BAO_SKAMID/">Link to simulations</a>. Each simulation weights 2.1Gb. All simulations occupy 630Gb. Fits format. Write to <a href="mailto:David.Alonso@physics.ox.ac.uk">David Alonso</a> if you need a script to read it.</p>
           
          <hr>
           <p><b>Name</b>: SKA1-LOW lightcone</p>
           <p><b>Authors</b>: <a href="mailto: villaescusa.francisco@gmail.com">Francisco Villaescusa-Navarro</a></p>
-          <p><b>Description</b>: This is a catalogue with positions, HI masses, redshifts, peculiar velocities of galaxies in a lightcone between between z=3 and z=6 covering an area of 28 square degrees. It has been generated using the Pinocchio code.</p>
+          <p><b>Description</b>: This is a catalogue with positions, HI masses, redshifts, peculiar velocities of galaxies in a lightcone between between z=3 and z=6 covering an area of 28 square degrees. It has been created by running a simulation with 4500^3 (~100 billion) particles in a periodic box of 520 Mpc/h using the Pinocchio code.  </p>
           <p><b>References</b>: <a href="http://adlibitum.oats.inaf.it/monaco/pinocchio.html">Pinocchio</a></p>
           <p><b>Data</b>: <a href="http://voms.simonsfoundation.org:50013/L335SDMK98DVhCqAmPpN2mwv3fos8x3/OutBoundSKA/SKA1-LOW_lightcone/pinocchio.LOW.plc.out">Here<a>. Single file of 43Gb. Format is binary and data can be read with <a href="http://voms.simonsfoundation.org:50013/L335SDMK98DVhCqAmPpN2mwv3fos8x3/OutBoundSKA/ReadPinocchio.py">this script</a>. </p>
 
